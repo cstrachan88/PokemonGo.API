@@ -1,15 +1,11 @@
-# Pokémon Go Client API
+# Pokemon Go Client API
 
-Interface to Pokémon Go Client including pretty much every call
-
-**Read previous issues before opening a new one! Maybe your issue is already answered. Questions will be removed.
-
-Donate some bitcoin beers via: 1KRBmNN8y9hwaXGR7rCoJWmzJHfBp2ybRb
+You can visit Pokestops, encounter Pokemon (normal/lure/incense), catch Pokemon, drop items, use items and everything else :)
 
 ----------
 ### Usage Example
 
-```
+```cs
 var client = new Client(new Settings()); //Define your own ISettings implementation
 await _client.Login.DoGoogleLogin();
 var inventory = await _client.Inventory.GetInventory();
@@ -26,10 +22,6 @@ var recycle = await _client.Inventory.RecycleItem(item.ItemId, item.Count);
 var useBerry = await _client.Encounter.UseCaptureItem(encounterId, ItemId.ItemRazzBerry, spawnPointId);
 var fortInfo = await _client.Fort.GetFort(pokeStopId, pokeStopLatitude, pokeStopLongitude);
 var fortSearch = await _client.Fort.SearchFort(pokeStopId, pokeStopLatitude, pokeStopLongitude);
-
-and a lot more :)
-
-You can visit Pokestops, encounter Pokemon (normal/lure/incense), catch Pokemon, drop items, use items and everything else :)
 ```
 
 ----------
@@ -50,3 +42,5 @@ This code is in no way affiliated with, authorized, maintained, sponsored or end
 ## Credits
 
 Credits to AeonLucid, johnduhart and for making public proto available. Saved a lot of work!
+
+Also credits to [FeroxRev](https://github.com/FeroxRev) and [wertzui](https://github.com/wertzui) for getting this API to where it is.
