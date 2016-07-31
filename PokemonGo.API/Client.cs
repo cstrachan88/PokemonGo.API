@@ -29,7 +29,7 @@ namespace PokemonGo.API
         public Rpc.Encounter Encounter;
         public Rpc.Misc Misc;
 
-        public ISettings Settings { get; }
+        public Settings Settings { get; }
         public string AuthToken { get; set; }
 
         public double CurrentLatitude { get; internal set; }
@@ -42,7 +42,7 @@ namespace PokemonGo.API
         internal string ApiUrl { get; set; }
         internal AuthTicket AuthTicket { get; set; }
 
-        public Client(ISettings settings)
+        public Client(Settings settings)
         {
             Settings = settings;
 
@@ -55,7 +55,7 @@ namespace PokemonGo.API
             Encounter = new Rpc.Encounter(this);
             Misc = new Rpc.Misc(this);
 
-            Player.SetCoordinates(Settings.DefaultLatitude, Settings.DefaultLongitude, Settings.DefaultAltitude);
+            Player.SetCoordinates(Settings.Latitude, Settings.Longitude, Settings.Altitude);
         }
     }
 }

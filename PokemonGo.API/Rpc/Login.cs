@@ -25,7 +25,7 @@ namespace PokemonGo.API.Rpc
             login = SetLoginType(client.Settings);
         }
 
-        private static ILoginType SetLoginType(ISettings settings)
+        private static ILoginType SetLoginType(Settings settings)
         {
             switch (settings.AuthType)
             {
