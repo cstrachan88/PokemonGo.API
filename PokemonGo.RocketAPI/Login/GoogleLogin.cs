@@ -30,7 +30,7 @@ namespace PokemonGo.RocketAPI.Login
             if (response.ContainsKey("Error"))
                 throw new GoogleException(response["Error"]);
 
-            //Todo: captcha/2fa implementation
+            // TODO captcha/2fa implementation
 
             if (!response.ContainsKey("Auth"))
                 throw new GoogleOfflineException();

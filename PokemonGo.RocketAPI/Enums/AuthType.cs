@@ -3,6 +3,6 @@
     public enum AuthType
     {
         Google,
-        Ptc
+        PokemonTrainerClub
     }
 }
