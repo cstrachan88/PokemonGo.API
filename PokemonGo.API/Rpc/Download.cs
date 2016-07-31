@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using PokemonGo.RocketAPI.Helpers;
+using PokemonGo.API.Helpers;
 using POGOProtos.Enums;
 using POGOProtos.Networking.Requests;
 using POGOProtos.Networking.Requests.Messages;
 using POGOProtos.Networking.Responses;
 
-namespace PokemonGo.RocketAPI.Rpc
+namespace PokemonGo.API.Rpc
 {
     public class Download : BaseRpc
     {

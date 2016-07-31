@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace PokemonGo.RocketAPI.Extensions
+namespace PokemonGo.API.Extensions
 {
     public static class DateTimeExtensions
     {

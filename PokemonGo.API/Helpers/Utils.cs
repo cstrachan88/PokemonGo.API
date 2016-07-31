@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace PokemonGo.RocketAPI.Helpers
+namespace PokemonGo.API.Helpers
 {
     public class Utils
     {

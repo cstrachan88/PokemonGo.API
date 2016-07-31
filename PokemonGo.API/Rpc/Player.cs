@@ -4,15 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Google.Protobuf;
-using PokemonGo.RocketAPI.Extensions;
-using PokemonGo.RocketAPI.Helpers;
+using PokemonGo.API.Extensions;
+using PokemonGo.API.Helpers;
 using POGOProtos.Data.Player;
 using POGOProtos.Enums;
 using POGOProtos.Networking.Requests;
 using POGOProtos.Networking.Requests.Messages;
 using POGOProtos.Networking.Responses;
 
-namespace PokemonGo.RocketAPI.Rpc
+namespace PokemonGo.API.Rpc
 {
     public class Player : BaseRpc
     {

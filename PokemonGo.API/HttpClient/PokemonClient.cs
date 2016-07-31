@@ -5,9 +5,9 @@ using System.Net;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
-using PokemonGo.RocketAPI.Helpers;
+using PokemonGo.API.Helpers;
 
-namespace PokemonGo.RocketAPI.HttpClient
+namespace PokemonGo.API.HttpClient
 {
     public class PokemonHttpClient : System.Net.Http.HttpClient
     {

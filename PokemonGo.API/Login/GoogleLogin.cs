@@ -1,5 +1,4 @@
 using DankMemes.GPSOAuthSharp;
-using PokemonGo.RocketAPI.Exceptions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,8 +7,9 @@ using System.Net.Http;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
+using PokemonGo.API.Exceptions;
 
-namespace PokemonGo.RocketAPI.Login
+namespace PokemonGo.API.Login
 {
     public class GoogleLogin : ILoginType
     {

@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Google.Protobuf;
-using PokemonGo.RocketAPI.Enums;
-using PokemonGo.RocketAPI.Extensions;
-using PokemonGo.RocketAPI.Helpers;
+using PokemonGo.API.Helpers;
+using PokemonGo.API.Enums;
+using PokemonGo.API.Extensions;
 using POGOProtos.Networking.Envelopes;
 using POGOProtos.Networking.Requests;
 
-namespace PokemonGo.RocketAPI.Rpc
+namespace PokemonGo.API.Rpc
 {
     public class BaseRpc
     {

@@ -9,7 +9,7 @@ using POGOProtos.Networking.Requests;
 using POGOProtos.Networking.Requests.Messages;
 using POGOProtos.Networking.Responses;
 
-namespace PokemonGo.RocketAPI.Rpc
+namespace PokemonGo.API.Rpc
 {
     public class Encounter : BaseRpc
     {

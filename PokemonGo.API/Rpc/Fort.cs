@@ -5,15 +5,15 @@ using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using Google.Protobuf.Collections;
-using PokemonGo.RocketAPI;
-using PokemonGo.RocketAPI.Rpc;
+using PokemonGo.API;
+using PokemonGo.API.Rpc;
 using POGOProtos.Data.Battle;
 using POGOProtos.Inventory.Item;
 using POGOProtos.Networking.Requests;
 using POGOProtos.Networking.Requests.Messages;
 using POGOProtos.Networking.Responses;
 
-namespace PokemonGo.RocketAPI.Rpc
+namespace PokemonGo.API.Rpc
 {
     public class Fort : BaseRpc
     {

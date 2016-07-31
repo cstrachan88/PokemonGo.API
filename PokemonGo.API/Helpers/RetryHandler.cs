@@ -5,7 +5,7 @@ using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace PokemonGo.RocketAPI.Helpers
+namespace PokemonGo.API.Helpers
 {
     internal class RetryHandler : DelegatingHandler
     {

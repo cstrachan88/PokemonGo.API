@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PokemonGo.RocketAPI.Exceptions
+namespace PokemonGo.API.Exceptions
 {
     public class GoogleException : Exception
     {

@@ -4,15 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Google.Protobuf;
-using PokemonGo.RocketAPI.Enums;
-using PokemonGo.RocketAPI.Exceptions;
-using PokemonGo.RocketAPI.Extensions;
-using PokemonGo.RocketAPI.Helpers;
-using PokemonGo.RocketAPI.Login;
+using PokemonGo.API.Enums;
+using PokemonGo.API.Exceptions;
+using PokemonGo.API.Login;
+using PokemonGo.API.Extensions;
+using PokemonGo.API.Helpers;
 using POGOProtos.Networking.Requests;
 using POGOProtos.Networking.Requests.Messages;
 
-namespace PokemonGo.RocketAPI.Rpc
+namespace PokemonGo.API.Rpc
 {
     public delegate void GoogleDeviceCodeDelegate(string code, string uri);
     public class Login : BaseRpc

@@ -1,12 +1,12 @@
 using Newtonsoft.Json;
-using PokemonGo.RocketAPI.Exceptions;
 using System.Collections.Generic;
 using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
 using System.Web;
+using PokemonGo.API.Exceptions;
 
-namespace PokemonGo.RocketAPI.Login
+namespace PokemonGo.API.Login
 {
     class PtcLogin : ILoginType
     {

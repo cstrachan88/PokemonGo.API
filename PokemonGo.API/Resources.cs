@@ -1,4 +1,4 @@
-﻿namespace PokemonGo.RocketAPI
+﻿namespace PokemonGo.API
 {
     public class Resources
     {

@@ -2,10 +2,10 @@
 using System.Net.Http;
 using System.Threading.Tasks;
 using Google.Protobuf;
-using PokemonGo.RocketAPI.Exceptions;
+using PokemonGo.API.Exceptions;
 using POGOProtos.Networking.Envelopes;
 
-namespace PokemonGo.RocketAPI.Extensions
+namespace PokemonGo.API.Extensions
 {
     public static class HttpClientExtensions
     {

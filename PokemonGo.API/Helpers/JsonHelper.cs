@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json.Linq;
 
-namespace PokemonGo.RocketAPI.Helpers
+namespace PokemonGo.API.Helpers
 {
     public class JsonHelper
     {

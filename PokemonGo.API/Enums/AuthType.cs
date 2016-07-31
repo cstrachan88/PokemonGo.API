@@ -1,4 +1,4 @@
-﻿namespace PokemonGo.RocketAPI.Enums
+﻿namespace PokemonGo.API.Enums
 {
     public enum AuthType
     {

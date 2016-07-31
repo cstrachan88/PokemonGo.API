@@ -2,7 +2,7 @@
 using System.Linq;
 using Google.Common.Geometry;
 
-namespace PokemonGo.RocketAPI.Helpers
+namespace PokemonGo.API.Helpers
 {
     public class S2Helper
     {

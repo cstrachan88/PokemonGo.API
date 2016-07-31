@@ -7,8 +7,8 @@
     <ProjectGuid>{05D2DA44-1B8E-4CF7-94ED-4D52451CD095}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>PokemonGo.RocketAPI</RootNamespace>
-    <AssemblyName>Pokemon.Go.Rocket.API</AssemblyName>
+    <RootNamespace>PokemonGo.API</RootNamespace>
+    <AssemblyName>PokemonGo.API</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

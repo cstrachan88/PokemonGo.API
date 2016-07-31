@@ -1,6 +1,6 @@
-﻿using PokemonGo.RocketAPI.Enums;
+﻿using PokemonGo.API.Enums;
 
-namespace PokemonGo.RocketAPI
+namespace PokemonGo.API
 {
     public interface ISettings
     {

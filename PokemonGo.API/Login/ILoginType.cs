@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
 
-namespace PokemonGo.RocketAPI.Login
+namespace PokemonGo.API.Login
 {
     /// <summary>
     /// Interface for the login into the game using either Google or PTC

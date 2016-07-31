@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace PokemonGo.RocketAPI.Exceptions
+namespace PokemonGo.API.Exceptions
 {
     public class PtcOfflineException : Exception
     {
