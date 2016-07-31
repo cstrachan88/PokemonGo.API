@@ -1,13 +1,26 @@
 # Pokemon Go Client API
 
-You can visit Pokestops, encounter Pokemon (normal/lure/incense), catch Pokemon, drop items, use items and everything else :)
+You can visit Pokestops, encounter Pokemon (normal/lure/incense), catch Pokemon, drop items, use items and everything else.
 
 ----------
 ### Usage Example
 
 ```cs
-var client = new Client(new Settings()); //Define your own ISettings implementation
+// Initialize the client with the required settings
+var client = new Client(new Settings
+{
+    AuthType = AuthType.Google,
+    Latitude = 0,
+    Longitude = 0,
+    Altitude = 0,
+    Username = "fake@gmail.com",
+    Password = "fake"
+});
+
+// Login to the API - throws a GoogleException if something goes wrong
 await _client.Login.DoGoogleLogin();
+
+// Use the API by calling any of the methods available
 var inventory = await _client.Inventory.GetInventory();
 var profile = await _client.Player.GetOwnProfile();
 var playerStats = await _inventory.GetPlayerStats();
@@ -22,6 +35,7 @@ var recycle = await _client.Inventory.RecycleItem(item.ItemId, item.Count);
 var useBerry = await _client.Encounter.UseCaptureItem(encounterId, ItemId.ItemRazzBerry, spawnPointId);
 var fortInfo = await _client.Fort.GetFort(pokeStopId, pokeStopLatitude, pokeStopLongitude);
 var fortSearch = await _client.Fort.SearchFort(pokeStopId, pokeStopLatitude, pokeStopLongitude);
+// ...
 ```
 
 ----------
@@ -33,7 +47,7 @@ According to [the company](http://www.pokemon.com/us/pokemon-video-games/pokemon
 
 # License
 
-This Project is licensed as GNU (GNU GENERAL PUBLIC LICENSE v3) 
+This Project is licensed as [GPLv3](https://github.com/cstrachan88/PokemonGo.API/blob/master/LICENSE)
 
 ## Legal
 
@@ -41,6 +55,6 @@ This code is in no way affiliated with, authorized, maintained, sponsored or end
 
 ## Credits
 
-Credits to AeonLucid, johnduhart and for making public proto available. Saved a lot of work!
-
-Also credits to [FeroxRev](https://github.com/FeroxRev) and [wertzui](https://github.com/wertzui) for getting this API to where it is.
+* [AeonLucid](https://github.com/AeonLucid) - for making the protos available
+* [FeroxRev](https://github.com/FeroxRev) - for doing a significant amount of work on this API
+* And all the other contributors who have made these projects possible
